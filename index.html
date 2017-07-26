@@ -5,28 +5,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portafolio BEM</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<!-- Link archivo css-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	
 </head>
 <body>
 <!-- Menu con clases BEM-->
-	<header>
-		<div class="container-fluid">
-			<div class="row">
-				<img class="img-responsive img-circle" src="img/woman1.jpg" alt="">
-				<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>PROFILE</button>
-				<ul>
-					<li>
-					<a href="#">SKILLS</a></li>
-					<li>
-					<a href="#">WORK</a></li>
-					<li>
-					<a href="#">RESUME</a></li>
-				</ul>
-			</div>
-		</div>
-	</header>
+	<header class="menu">
+		<img class="menu__img img-circle" src="img/woman1.jpg" alt="">
+		<button type="button" class="menu_btn"><i class="fa fa-user" aria-hidden="true"></i>PROFILE</button>
+		<ul class="menu__list">
+			<li><i class="fa fa-trophy" aria-hidden="true"></i><a href="#">SKILLS</a></li>
+			<li><i class="fa fa-briefcase" aria-hidden="true"></i><a href="#">WORK</a></li>
+			<li><i class="fa fa-file-text" aria-hidden="true"></i><a href="#">RESUME</a></li>
+		</ul>
+	</header><!-- /.-->
+
 	<section>
 		<div class="container-fluid">
 			<div class="row">
