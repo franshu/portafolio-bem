@@ -1,12 +1,42 @@
 //Estilos menu
 .menu{
+	text-align: center;
 	background-color:$color_rojo;
+	width:100%;
+	height:50px;
+	display: inline-block;
 }
 
 .menu__img{
-	width:30%;
+	width:8%;
 	padding:5px;
+	overflow: hidden;
+}
+.menu__btn{
+	color:$color_white;
+}
+.menu__list{
+	list-style: none;
+	display: inline-block;
+	text-decoration: none;
 }
 
+.menu__list--link{
+	text-decoration: none;
+	color:$color_white;
+	display: inline-block;
+	padding: 10px;
+		i{
+			padding: 5px;
 
+		}
+}
 
+//estilos banner
+
+.banner{
+	width:100%;
+	height:500px;
+	background-color:$color_blue;
+
+}
