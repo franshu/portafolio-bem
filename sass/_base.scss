@@ -7,37 +7,41 @@
 .menu{
 	text-align: center;
 	background-color:$color_rojo;
-	width:100%;
-	height:87px;
-	display: inline-block;
+	text-align: center;
+	width: 100%;
+    height: 113px;
+    margin: 0px;
+    padding-top: 6px;
 }
-.menu__list{
+.menu__list li{
 	color:$color_white;
 	font-size:14px;
 	text-decoration: none;
 	list-style: none;
 	display: inline-block;
+		i{
+			@include icon;
+		}
 }
-
 .menu__btn{
+	color:$color_white;
 	background-color:$color_blue;
-    width: 17%;
-    height: 46px;
+	width: 11%;
+	height: 42px;
     text-align: center;
     padding: 6px 0;
     border-radius: 28px;
     border-color: transparent;
     	i{
-    		margin-right: 5px;
-    		font-size: 12px;
+			@include icon;
     	}
 }
 .menu__img{
-	width: 12%;
+	width: 8%;
     display: inline-block;
     margin-right: 50px;
-    padding:5px;
-	overflow: hidden;
+    padding: 2px;
+    overflow: hidden;
 }
 .menu__list--link{
 	text-decoration: none;
@@ -46,12 +50,46 @@
 	padding: 10px;
 		i{
 			padding: 5px;
-
+			font-size: 18px !important;
+		}
+		a{
+			color:$color_white !important;
 		}
 }
 //estilos banner
 .banner{
 	width:100%;
-	height:500px;
+	height:100vh;
 	background-color:$color_blue;
+	&__img{
+		margin-top: 53px;
+    	margin-left: 223px;
+    	width: 21%;
+	}
+	&__title{
+	position: relative;
+	right: -520px;
+    top: -367px;
+	font-size: 40px;
+	color: $color_verde;
+	margin-top: 115px;
+
+	}
+
 }
+.banner__title--sub{
+	color: #fff;
+    font-size: 26px;
+    font-weight: lighter;
+    position: relative;
+    right: -520px;
+    top: -367px;
+}
+
+
+
+
+
+
+
+
